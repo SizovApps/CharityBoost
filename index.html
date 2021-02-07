@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Дай лапу</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__logo" href="../index.html"><img src="./images/testLogo.svg" alt=""></a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+
+  <section class="start_section">
+    <div class="start_section__main">
+      <div class="start_section__main-left">
+        <div class="start_section__main-round"></div>
+        <div class="start_section__main-text">
+            <h1 class="start_section__main-title">Благотворительный
+проект "Дай лапу"</h1>
+            <p class="start_section__main_p">ОБРАЗОВАТЕЛЬНАЯ ТЕКСТОВАЯ МИНИ-ИГРА ПРО
+ЖИЗНЬ БЕЗДОМНЫХ ЖИВОТНЫХ</p>
+        </div>
+      </div>
+      <div class="start_section__main-right">
+        <div class="start_section__dog-box">
+          <img src="./images/dogMain.png" alt="" class="start_section__dog">
+          <a href="#mainGame"><div class="start_section__main-play">Играть</div></a>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="game_section" style="display:none;" id="mainGame">
+    <div class="game_section__main">
+      <!-- Здоровье и счастье -->
+      <div class="game_section__stats">
+        <div class="game_section__stats-healt">
+            <h4>Здоровье:</h4>
+            <div class="game_section__hearth-icons">
+              <img id="hearth1" src="./images/hearthIcon.png" alt="">
+              <img id="hearth2" src="./images/hearthIcon.png" alt="">
+              <img id="hearth3" src="./images/hearthIcon.png" alt="">
+              <img id="hearth4" src="./images/hearthIcon.png" alt="">
+              <img id="hearth5" src="./images/hearthIcon.png" alt="">
+            </div>
+        </div>
+        <div class="game_section__stats-happy">
+            <h4>Дикость:</h4>
+            <img id="wolfImage" src="./images/wolf.png" alt="">
+        </div>
+      </div>
+      <!-- Здоровье и счастье -->
+
+
+      <div class="game_section__field" id="game_section__1-field" style="display: block;">
+
+
+        <div class="game_section__field-current" id="game_question__1">
+            <p>На улице ударил холод, да ещё и дождь. Вы промокли насквозь и ишите, где укрыться.</p>
+            <button type="button" name="button" class="game_section__answer game_answer-1">Поищу, где можно укрыться в округе</button>
+            <button type="button" name="button" class="game_section__answer game_answer-2">Посплю прямо на земле в своем укромном месте, где меня зато никто не достанет</button>
+            <button type="button" name="button" class="game_section__answer game_answer-3">Попробую спрятаться в подъезде, где меня подкармливает консьержка</button>
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__11" style="display: none;">
+           <p>Вы заснули под теплыми трубами, пока вы не выросли и помещаетесь под ними - можете здесь греться.</p>
+           <div class="game_section-answer-continue game_section-answer-continue-2">Продолжить игру</div>
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__12" style="display: none;">
+           <p>Вы пережили ночь, но чувствуете себя хуже, чем вчера.</p>
+           <div class="game_section-answer-continue game_section-answer-continue-2">Продолжить игру</div>
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__13" style="display: none;">
+           <p>Консьержка пустила вас и вы немножко погрелись, но жильцы, увидившие вас, пинками выгнали вас из подъезда.</p>
+           <div class="game_section-answer-continue game_section-answer-continue-2">Продолжить игру</div>
+        </div>
+
+
+        <div class="game_section__field-current" id="game_question__2" style="display: none;">
+            <p>Это был долгий день, и вы очень голодны. Куда пойдёте искать еду?</p>
+            <button type="button" name="button" class="game_section__answer game_answer-1">Съем кусок мяса,оставленный около дерева</button>
+            <button type="button" name="button" class="game_section__answer game_answer-2">Пойду попрошайничать в парке</button>
+            <button type="button" name="button" class="game_section__answer game_answer-3">Я знаю одну мусорку - поищу там объедки</button>
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__21" style="display: none;">
+           <p>Вас отравили догхантеры.</p>
+           <p>Будучи слишком голодными, вы не задумались о том, что такая удача выглядит слишком подозрительно. Вскоре вам, стало плохо, от боли скрутило живот и вы потеряли сознание. Вам повезло, что доза яда оказалась маленькой и вам удалось выжить!</p>
+           <p class="redText">По данным "Зооправо", ежегодно догхантеры истребляют более 2500 собак.</p>
+           <div class="game_section-answer-continue game_section-answer-continue-3">Продолжить игру</div>
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__22" style="display: none;">
+           <p>...</p>
+           <div class="game_section-answer-continue game_section-answer-continue-0">Продолжить игру</div>
+        </div>
+        <div class="game_section__field-current-answer game_section-answer-continue-3" id="game_answer__23" style="display: none;">
+           <p>...</p>
+           <div class="game_section-answer-continue">Продолжить игру</div>
+        </div>
+
+
+        <div class="game_section__field-current" id="game_question__0" style="display: none;">
+            <p>В парке много людей и вы не знаете, к кому подойти</p>
+            <button type="button" name="button" class="game_section__answer game_answer-1">Милая читающая девушка</button>
+            <button type="button" name="button" class="game_section__answer game_answer-2">Парень, играющий в смартфон</button>
+            <button type="button" name="button" class="game_section__answer game_answer-3">Бабушка с пакетиком кошачьего корма</button>
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__01" style="display: none;">
+           <p>Пугается, прогоняет</p>
+           <div class="game_section-answer-continue game_section-answer-continue-3">Продолжить игру</div>
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__02" style="display: none;">
+           <p>Кидает камнем</p>
+           <div class="game_section-answer-continue game_section-answer-continue-3">Продолжить игру</div>
+        </div>
+        <div class="game_section__field-current-answer game_section-answer-continue-3" id="game_answer__03" style="display: none;">
+           <p>Кормит</p>
+           <div class="game_section-answer-continue">Продолжить игру</div>
+        </div>
+
+
+
+
+        <div class="game_section__field-current" id="game_question__3" style="display: none;">
+            <p>Вы замечаете несколько собак вашего размера</p>
+            <button type="button" name="button" class="game_section__answer game_answer-1">Пробуете подружиться, вместе больше шансов выжить</button>
+            <button type="button" name="button" class="game_section__answer game_answer-2">Избегаете их</button>
+            <button type="button" name="button" class="game_section__answer game_answer-3">Кажется у них есть еда, пытаетесь стащить кусочек</button>
+        </div>
+
+        <div class="game_section__field-current-answer" id="game_answer__31" style="display: none;">
+           <p>Tеперь вы сторонитесь людей, вам комфортно в бездомной стае.</p>
+           <div class="game_section-answer-continue game_section-answer-continue-4">Продолжить игру</div>
+        </div>
+        <div class="game_section__field-current-answer"  id="game_answer__32" style="display: none;">
+           <p>...</p>
+           <div class="game_section-answer-continue game_section-answer-continue-4">Продолжить игру</div>
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__33" style="display: none;">
+           <p>Началась драка, в которой вы проиграли.</p>
+           <div class="game_section-answer-continue game_section-answer-continue-4">Продолжить игру</div>
+        </div>
+
+
+        <div class="game_section__field-current" id="game_question__4" style="display: none;">
+            <p>Вы случайно натыкаетесь на человека, который подзывает вас к себе </p>
+            <button type="button" name="button" class="game_section__answer game_answer-1 aEq0" id="check1" disabled style="opacity: 0.2;">Приветственно виляем хвостом</button>
+            <button type="button" name="button" class="game_section__answer game_answer-2 aEq0" id="check2" disabled style="opacity: 0.2;">Строите глазки, может накормит</button>
+            <button type="button" name="button" class="game_section__answer game_answer-3 aBigger2" id="check3" disabled style="opacity: 0.2;">Пытаетесь убежать от него</button>
+            <button type="button" name="button" class="game_section__answer game_answer-4 aBigger2" id="check4" disabled style="opacity: 0.2;">Игнорируете</button>
+            <button type="button" name="button" class="game_section__answer game_answer-5 aEq1" id="check5" disabled style="opacity: 0.2";>Пытаетесь спрятаться, вам страшно</button>
+        </div>
+
+        <div class="game_section__field-current-answer" id="game_answer__41" style="display: none;">
+          <p>В приюты попадают только самые социальные животные с улицы, меньше 10%, и им всё равно требуется помочь зоопсихолога.</p>
+          <a href="./post-1.html">Узнать больше...</a>
+        <div class="game_section-answer-continue game_section-answer-continue-6">Продолжить игру</div>
+        </div>
+        <div class="game_section__field-current-answer"  id="game_answer__42" style="display: none;">
+          <p>В приюты попадают только самые социальные животные с улицы, меньше 10%, и им всё равно требуется помочь зоопсихолога.</p>
+          <a href="./post-1.html">Узнать больше...</a>
+           <div class="game_section-answer-continue game_section-answer-continue-6">Продолжить игру</div>
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__43" style="display: none;">
+           <p>Вы вылечены и откормлены зоозащитной общественностью и выпущены в среду обитания.
+Эффективность и целесообразность применения данного метода в отношении бездомных собак служит предметом полемики учёных и общественной дискуссии. Критики отмечают, что стерилизованные собаки не перестают быть хищниками и сохраняют территориальную агрессию.</p>
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__44" style="display: none;">
+           <p>Вы вылечены и откормлены зоозащитной общественностью и выпущены в среду обитания.
+
+Эффективность и целесообразность применения данного метода в отношении бездомных собак служит предметом полемики учёных и общественной дискуссии. Критики отмечают, что стерилизованные собаки не перестают быть хищниками и сохраняют территориальную агрессию.</p>
+
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__45" style="display: none;">
+           <p>Вы вылечены и откормлены зоозащитной общественностью и выпущены в среду обитания.
+
+Эффективность и целесообразность применения данного метода в отношении бездомных собак служит предметом полемики учёных и общественной дискуссии. Критики отмечают, что стерилизованные собаки не перестают быть хищниками и сохраняют территориальную агрессию.</p>
+        </div>
+
+
+
+        <div class="game_section__field-current" id="game_question__6" style="display: none;">
+            <p>Вы привыкли к приюту, вдруг появляется человек</p>
+            <button type="button" name="button" class="game_section__answer game_answer-1">Скромно сидим</button>
+            <button type="button" name="button" class="game_section__answer game_answer-2">Неинтересно пытаемся играть с другими псами</button>
+            <button type="button" name="button" class="game_section__answer game_answer-3" id="check6" disabled style="opacity: 0.2;">Радостно лаем, виляем хвостом</button>
+        </div>
+
+        <div class="game_section__field-current-answer" id="game_answer__61" style="display: none;">
+           <p>Концовка про остаток жизни в приюте, но с опекуном</p>
+        </div>
+        <div class="game_section__field-current-answer"  id="game_answer__62" style="display: none;">
+           <p>Концовка хэппи энд</p>
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__63" style="display: none;">
+           <p>Концовка хэппи энд</p>
+        </div>
+
+
+        <div class="game_section__field-current" id="game_question__7" style="display: none;">
+            <p>Вы привыкли к приюту, вдруг появляется человек</p>
+            <button type="button" name="button" class="game_section__answer game_answer-1" id="check7" disabled style="opacity: 0.2;">Радостно лаем, виляем хвостом</button>
+            <button type="button" name="button" class="game_section__answer game_answer-2">Скромно сидим</button>
+            <button type="button" name="button" class="game_section__answer game_answer-3">Неинтересно, пытаемся играть с другими псами</button>
+            <button type="button" name="button" class="game_section__answer game_answer-4">Чужие люди напрягают, страшно</button>
+        </div>
+
+        <div class="game_section__field-current-answer" id="game_answer__71" style="display: none;">
+           <p>Концовка хэппи энд</p>
+        </div>
+        <div class="game_section__field-current-answer"  id="game_answer__72" style="display: none;">
+           <p>Концовка про остаток жизни в приюте</p>
+        </div>
+        <div class="game_section__field-current-answer" id="game_answer__73" style="display: none;">
+           <p>Концовка хэппи энд</p>
+        </div>
+
+
+        <!--////////////////////////////////   -////////////////////////////////   -////////////////////////////////
+        -////////////////////////////////   -////////////////////////////////   -////////////////////////////////
+        -////////////////////////////////   -////////////////////////////////   -////////////////////////////////   -->
+
+      </div>
+
+    </div>
+  </section>
+
+<section class="fond">
+  <div class="fond__main">
+    <h2>Вы можете поддержать бездомных собак, прислав нам какую-то сумму денег. А в качестве памятного бонуса получите лимитированный ПИН! </h2>
+    <div class="fond__main-pin">
+    <img src="./images/pin.jpg" alt="">
+    </div>
+    <h2>Контакты:</h2>
+  </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="./script.js">
+
+</script>
+</body>
+</html>
